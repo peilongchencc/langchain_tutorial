@@ -1,4 +1,6 @@
 # Text Splitters
+- [Text Splitters](#text-splitters)
+  - [Types of Text Splitters(文本分割器的类型):](#types-of-text-splitters文本分割器的类型)
 
 Once you've loaded documents, you'll often want to transform them to better suit your application.<br>
 
@@ -84,7 +86,7 @@ Character        | A user defined character                |              | Spli
 HTML             |HTML 特定字符                           | ✅           | 根据 HTML 特定字符分割文本。值得注意的是，这会添加有关该块来自何处的相关信息（基于 HTML）。
 Markdown         |Markdown 特定字符                      | ✅           | 根据 Markdown 特定字符分割文本。值得注意的是，这会添加有关该块来自何处的相关信息（基于 Markdown）。
 代码             |代码（Python、JS）特定字符             |              | 根据特定于编程语言的字符分割文本。可供选择 15 种不同的语言。
-标记             |标记                                    |              | 根据标记分割文本。有几种不同的方式来衡量标记。
+标记(Token)             |标记(Tokens)                                   |              | 根据标记(Tokens)分割文本。有几种不同的方式来衡量标记。
 字符             |用户定义的字符                          |              | 根据用户定义的字符分割文本。这是较简单的方法之一。
 [实验性] 语义块分割器 |句子                               |              | 首先按句子分割。然后，如果它们在语义上足够相似，就将它们组合在一起。取自 [Greg Kamradt](https://github.com/FullStackRetrieval-com/RetrievalTutorials/blob/main/tutorials/LevelsOfTextSplitting/5_Levels_Of_Text_Splitting.ipynb)。
 [AI21 语义文本分割器](https://python.langchain.com/docs/integrations/document_transformers/ai21_semantic_text_splitter/) |语义 |✅ | 识别形成连贯文本片段的不同主题，并沿着这些主题分割。
