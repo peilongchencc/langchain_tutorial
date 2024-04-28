@@ -1,6 +1,8 @@
 # Text Splitters
 - [Text Splitters](#text-splitters)
   - [Types of Text Splitters(文本分割器的类型):](#types-of-text-splitters文本分割器的类型)
+  - [Evaluate text splitters(评估文本分割器):](#evaluate-text-splitters评估文本分割器)
+  - [Other Document Transforms(其他文档转换方式):](#other-document-transforms其他文档转换方式)
 
 Once you've loaded documents, you'll often want to transform them to better suit your application.<br>
 
@@ -90,3 +92,29 @@ Markdown         |Markdown 特定字符                      | ✅           | �
 字符             |用户定义的字符                          |              | 根据用户定义的字符分割文本。这是较简单的方法之一。
 [实验性] 语义块分割器 |句子                               |              | 首先按句子分割。然后，如果它们在语义上足够相似，就将它们组合在一起。取自 [Greg Kamradt](https://github.com/FullStackRetrieval-com/RetrievalTutorials/blob/main/tutorials/LevelsOfTextSplitting/5_Levels_Of_Text_Splitting.ipynb)。
 [AI21 语义文本分割器](https://python.langchain.com/docs/integrations/document_transformers/ai21_semantic_text_splitter/) |语义 |✅ | 识别形成连贯文本片段的不同主题，并沿着这些主题分割。
+
+
+## Evaluate text splitters(评估文本分割器):
+
+You can evaluate text splitters with the Chunkviz utility created by Greg Kamradt.<br>
+
+您可以使用Greg Kamradt创建的Chunkviz实用程序来评估文本分割器。<br>
+
+Chunkviz is a great tool for visualizing how your text splitter is working.<br>
+
+Chunkviz是一个很好的工具，可以可视化您的文本分割器的工作方式。<br>
+
+It will show you how your text is being split up and help in tuning up the splitting parameters.<br>
+
+它会向您展示文本是如何被分割的，并帮助调整分割参数。<br>
+
+
+## Other Document Transforms(其他文档转换方式):
+
+Text splitting is only one example of transformations that you may want to do on documents before passing them to an LLM.<br>
+
+在将文档传递给LLM之前，文本分割只是您可能希望对其进行的转换的一个示例。<br>
+
+Head to Integrations for documentation on built-in document transformer integrations with 3rd-party tools.<br>
+
+请前往“集成”页面查看有关与第三方工具集成的内置文档转换器的文档。<br>
