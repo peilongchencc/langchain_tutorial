@@ -80,18 +80,3 @@ vectorstore = Milvus.from_documents(
 
 > milvus一个集合内最多支持4096个分区。
 
-
-
-在Markdown文档中，要创建一个可点击的链接，让用户点击就可以跳转到另一个网页，你可以使用以下的语法：
-
-```markdown
-[链接文字](网址)
-```
-
-例如，如果你想创建一个指向 Google 的链接，你可以这样写：
-
-```markdown
-[访问谷歌](https://www.google.com)
-```
-
-这样，当用户点击“访问谷歌”时，就会跳转到 Google 的首页。这种格式适用于大多数Markdown编辑器和解析器，非常方便用于添加外部资源或引用。
